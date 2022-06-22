@@ -1,0 +1,25 @@
+.member-card{
+    padding: 1rem;
+}
+
+.vertical-position{
+    transform: rotate(180deg);
+}
+
+.name-position{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-btn-group{
+    border: 2px solid #000;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0.2rem;
+    align-items: center;
+}
+
+.social-btn-group button{
+    border: none;
+    background: #fff;
+}

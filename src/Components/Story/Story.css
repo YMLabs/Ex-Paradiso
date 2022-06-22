@@ -1,0 +1,12 @@
+.story-group{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-container{
+    display: flex;
+}
+
+.modal-container img{
+    padding: 1rem;
+}

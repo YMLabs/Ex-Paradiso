@@ -1,0 +1,7 @@
+.card{
+    margin: 1rem;
+}
+
+.card .collection-img{
+    border: 2px solid #000;
+}

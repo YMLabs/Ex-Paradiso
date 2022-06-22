@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Laviossa;
+  src: url("./Fonts/Laviossa-Medium.otf");
+}
+@font-face {
+  font-family: Andale;
+  src: url("./Fonts/Andale\ Mono.ttf");
+}
+@font-face {
+  font-family: Porschav;
+  src: url("./Fonts/911porschav3left.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-laviossa{
+  font-family: Laviossa;
+}
+.font-andale{
+  font-family: Andale;
+}
+.font-porschav{
+  font-family: Porschav;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: Andale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin-top: 0.01rem;
+}
+
+.content{
+  padding: 2rem;
+  height: 90vh;
+}
+
+button{
+  cursor: pointer;
+}
+
+div.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.header h1{
+  font-size: 2.5rem;
 }

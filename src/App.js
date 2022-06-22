@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import Home from "./Components/Home/Home";
+import Intro from "./Components/Intro/Intro";
+import Team from "./Components/Team/Team";
+import Collection from "./Components/Collection/Collection";
+import Story from "./Components/Story/Story";
+import Roadmap from "./Components/Roadmap/Roadmap";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    !loading && (
+      <div className="App">
+        <Navbar/>
+        <div style={{paddingTop: "4rem"}}>
+          <Home/>
+          <Intro/>
+          <Team/>
+          <Collection/>
+          <Roadmap/>
+          <Story/>
+        </div>
+        {/* <Footer/> */}
+      </div>
+    )
   );
 }
 

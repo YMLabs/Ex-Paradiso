@@ -1,0 +1,13 @@
+section.intro{
+    margin: 1rem 3rem;
+}
+
+td{
+    padding: 1rem;
+    font-family: Andale;
+}
+
+td:first-child{
+    font-family: Porschav;
+}
+
